@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Meat House</string>
+    <string name="language_choose">Select a language</string>
+    <string name="btn_continue">Continue</string>
+</resources>

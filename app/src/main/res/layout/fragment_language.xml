@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".screen.language.LanguageFragment">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/meat_logo"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/basiercircle_medium"
+        android:text="@string/language_choose"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/languages_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        tools:listitem="@layout/language_item" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_language"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="25dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/basiercircle_regular"
+        android:text="@string/btn_continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</LinearLayout>

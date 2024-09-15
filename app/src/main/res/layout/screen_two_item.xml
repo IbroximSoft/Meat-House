@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/screen_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/screen_two" />
+
+    <TextView
+        android:id="@+id/screen_text1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/basiercircle_medium"
+        android:gravity="center"
+        android:text="Meat House online do'kon"
+        android:textColor="@color/blue_color"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/screen_text2"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/basiercircle_regular"
+        android:gravity="center"
+        android:text="Oziq-ovqat va boshqa turli xil mahsulotlarni yetkazib berish hizmati"
+        android:textColor="@color/blue_color"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circle_blank"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/circle_filed"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/screen_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/basiercircle_regular"
+            android:onClick="nextPage4"
+            android:padding="10dp"
+            android:text="Keyingi"
+            android:textColor="@color/blue_color"
+            android:textSize="18sp"
+            tools:ignore="RelativeOverlap,UsingOnClickInXml" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -15,27 +15,15 @@ class HomeActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityHomeBinding
 
-    private var splashTimer = 4000
-    private val mTimeCounter = object : CountDownTimer(splashTimer.toLong(), 100) {
-        override fun onTick(p0: Long) {}
-
-        override fun onFinish() {
-            appbar()
-        }
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        mTimeCounter.start()
-
+        appbar()
     }
 
     private fun appbar(){
         binding.apply {
-            homeSplash.isVisible = false
-            homeFragments.isVisible = true
             bottomNavigation.setOnItemSelectedListener {
                 when (it.itemId) {
 
