@@ -39,6 +39,9 @@ class MoreAdapter(private val context: Activity, private val arrayList: ArrayLis
             if (language == "en") languageCheck.isVisible = true
 
         } else if (position == 2) {
+            if (language == "ko") languageCheck.isVisible = true
+
+        } else if (position == 3) {
             if (language == "ru") languageCheck.isVisible = true
         }
 

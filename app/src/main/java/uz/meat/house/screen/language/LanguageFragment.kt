@@ -41,12 +41,14 @@ class LanguageFragment : Fragment() {
         val imageId = intArrayOf(
             R.drawable.uzb_language,
             R.drawable.english_language,
+            R.drawable.korea_language,
             R.drawable.russia_language
         )
 
         val text = arrayOf(
             "O'zbekcha",
             "English",
+            "카레스키",
             "Русский"
         )
 
@@ -73,6 +75,10 @@ class LanguageFragment : Fragment() {
                         }
 
                         2 -> {
+                            languageChange("ko")
+                        }
+
+                        3 -> {
                             languageChange("ru")
                         }
                     }
