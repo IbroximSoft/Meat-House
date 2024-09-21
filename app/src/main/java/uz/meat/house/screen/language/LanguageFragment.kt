@@ -15,8 +15,7 @@ import uz.meat.house.R
 import uz.meat.house.databinding.FragmentLanguageBinding
 import uz.meat.house.screen.ScreenActivity
 import uz.meat.house.screen.language.adapter.List
-import uz.meat.house.screen.language.adapter.MoreAdapter
-import uz.meat.house.utils.languageIntents
+import uz.meat.house.screen.language.adapter.LanguageAdapter
 
 class LanguageFragment : Fragment() {
 
@@ -61,7 +60,7 @@ class LanguageFragment : Fragment() {
 
         binding.apply {
             languagesList.isClickable = true
-            languagesList.adapter = MoreAdapter(view.context as Activity, languageList)
+            languagesList.adapter = LanguageAdapter(view.context as Activity, languageList)
 
             languagesList.onItemClickListener =
                 AdapterView.OnItemClickListener { _: AdapterView<*>?, _: View?, position: Int, _: Long ->
